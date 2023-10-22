@@ -1,6 +1,6 @@
 package org.example.ejercicios;
+
 import java.util.Scanner;
-import java.util.concurrent.atomic.AtomicReference;
 
 public class CalculaAreaTriangulo3 {
 	public static void main (String[] args) {
