@@ -1,0 +1,60 @@
+
+Univesidad de Antioquia
+Técnicas de Programación y Laboratorio
+Parcial 1
+Octubre de 2023
+José Alfredo Martínez Valdés
+
+Algunas acciones
+
+I. Actualización del pom.xml, para facilitar el manejo de excepciones, formatear el código, realizar pruebas unitarias
+II Selección del Problema 1: CalculaAreaTrángulo3
+III Selección del Problema 2: Facturaciom3
+
+Reflexiones
+
+II. CalculaAreaTriangulo3
+
+Cambios propuestos:
+
+1. En el record, tiene tres atributos, el atributo String c, no se necesita para la tarea de Calcular el Área de un triángulo
+   se puede quitar ese atributo, ya que para calcular el área del triángulo no se requier saber el color del triángulo.
+2. La variable b no resulta descriptiva (se supondria que se refiere a la base) no atiendo a las recomendaciones de código límpio
+3. La variable h no resulta descriptiva (se supondría que se refiere a la altura) no atiendo a las recomendaciones de código límpio
+2. En el tipo de datos del record triángulo, si la tanto la base como la altura son double, al crear la intancia triángulo, new triángulo
+   se espera que los dos se nombren de la misma manera, es decir, con punto que indique decimal acompañado de la letra D y en la variable 
+   valor_area_traiangulo también debería ser 0.0D
+3. En el método main se imprimen los valore para la base, la altura, y también para el resultado. Podría escribirse una función para
+   recibir los datos, otra para realizar el calculo del área y otra función para mostrar los datos. De esa manera, el código hace que 
+   se tengan funciones sencillas que realicen una sola tarea.
+   4. Tal como está el código, permite calcular solamente el área de un triángulo. Por esta razón, se ha creado una función para que se encuarga de
+   recibir los valores para la base y para la altura.
+5. Tal y como está el programa, no se tiene el manejo de excepciones. Por ejemplo, no valida que los valores de ingresos deben no negativos
+6. Escribir los estrictamente necesario en el método principal. Llamado a otras clases e instancias la estructura record Tríangulo.
+
+III. Facturaciom3
+
+Cambios propuestos.
+
+1. Cambiar el nombre por el de Facturacion3 (En el supuesto de que la m al final se haya puesto a drede)
+2. Revisar que no sobren atributos
+3. Revisar que se haya utilizado un tipado adecuado
+4. Revisar que la solución propuesta responda a la lógica del negocio
+5. Revisar que se atienda a las reglas del código limpio
+
+Solución propuesta:
+
+1. Cambiar el nombre, pasando de Facturaciom3 a Facturacion3
+2. Agregar un nuevo atributo al record, se espera de que una factura tenga un identificador que sea único porque un mismo cliente
+   puede tener una muchas facturas en un mismo día.
+3. Escribir todos los atributos atendiendo al camel case. los nombres compuestos inician en minisculas y cada una de las palabra siguientes
+   en mayúscualas. El atributo fechafactura se combia a fechaFactura
+4. La lista de precios deber ser uniformes y todas convertidas a tipado Double (no primitivo) finalizado con la letra D. Ejemplo 4500.0D
+5. Formatear la fecha de la factura a un formato fecha.
+6. Se adiciona una nueva factura
+7. Se crea una función para CacularTotal y Otra para mostrar la infomación de las facturas
+8. Se eliminan datos redundantes
+
+
+
+
